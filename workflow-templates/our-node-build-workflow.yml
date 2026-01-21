@@ -2,9 +2,11 @@ name: Node.js CI Workflow
 on:
   workflow_dispatch:
   push:
-    branches:[$default-branch]
+    branches:
+      - $default-branch
   pull_request:
-    branches:[$default-branch]
+    branches:
+      - $default-branch
 jobs:
   ci:
     name: Deployment
